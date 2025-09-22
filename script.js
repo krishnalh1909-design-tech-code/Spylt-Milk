@@ -29,4 +29,13 @@ gsap.from(".page1 .title h1",{
   delay:5
 },)
 
-// npx @tailwindcss/cli -i ./input.css -o ./output.css --watch
+gsap.from(".title2",{
+  // width:"0",
+  x:100,
+  opacity:0,
+  duration:0.5,
+  // stagger:0.05
+  delay:5
+})
+
+// // npx @tailwindcss/cli -i ./input.css -o ./output.css --watch
