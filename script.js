@@ -21,14 +21,12 @@ setTimeout(() => {
   document.querySelector(".bgVid video").play();
 }, 4000);
 
-const split = new SplitText(".page1 .title h1", { type: "chars" });
-
-gsap.from(split.chars, {
-  y: 500,
-  duration: 0.5,
-  stagger: 0.02,
-  delay: 5,
-  ease: "power3.out",
-});
+ 
+gsap.from(".page1 .title h1",{
+  y:500,
+  duration:0.5,
+  stagger:0.02,
+  delay:5
+},)
 
 // npx @tailwindcss/cli -i ./input.css -o ./output.css --watch
