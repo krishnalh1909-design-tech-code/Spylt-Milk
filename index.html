@@ -1,32 +1,55 @@
 <!doctype html>
 <html>
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="./output.css" rel="stylesheet">
 </head>
+
 <body>
-     <div class="main bg-[#222123]">
+  <div class="main bg-[#222123]">
 
-        <!-- ------------------LOADER------------------------------ -->
-            <div
-              class="loader flex items-center justify-center flex-col w-full h-screen bg-[#523122] fixed z-100"
-            >
-              <img
-                class="w-xs pt-48"
-                src="./Images/loader-img.svg"
-                alt="logo"
-              />
+    <!-- ------------------LOADER------------------------------ -->
+    <div class="loader flex items-center justify-center flex-col w-full h-screen bg-[#523122] fixed z-100">
+      <img class="w-xs pt-48" src="./Images/loader-img.svg" alt="logo" />
 
-              <span
-                class="loading font-[Antonio] font-bold text-5xl pt-40 text-[#F9E9DD] text-center"
-              ></span>
+      <span class="loading font-[Antonio] font-bold text-5xl pt-40 text-[#F9E9DD] text-center"></span>
 
-              <div class="show w-[0px] h-2.5 bg-[#F9E9DD] mt-7"></div>
-            </div> 
+      <div class="show w-[0px] h-2.5 bg-[#F9E9DD] mt-7"></div>
+    </div>
+    <!-- ------------------------------------------------------------- -->
 
-     </div>
+    <!-- -----------------HOME BACKGROUND VIDEO ------------------------------- -->
 
-     <script src="script.js"></script>
+    <div class="bgVid h-screen w-full absolute">
+      <video class="h-screen w-full object-cover" muted src="./Videos/main-video.mp4"></video>
+    </div>
+
+    <!-- ---------------------------------------------------------------------- -->
+
+    <!-- -----------------------Page-1------------------------------------------------ -->
+
+    <div class="page1 w-full h-screen relative overflow-hidden flex flex-col items-center justify-center gap-[25px]">
+
+      <div class="navbar p-7 w-[50%] flex items-center justify-between bg-transparent fixed top-0 left-0 z-99">
+        <img src="./Images/logo.svg" alt="" />
+
+        <i class="ri-menu-line text-2xl mix-blend-difference text-[#523122]"></i>
+      </div>
+
+
+    </div>
+
+    <!-- ---------------------------------------------------------------------------------------- -->
+
+
+
+
+
+  </div>
+
+  <script src="script.js"></script>
 </body>
+
 </html>
