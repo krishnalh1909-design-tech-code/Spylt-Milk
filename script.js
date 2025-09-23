@@ -28,12 +28,16 @@ gsap.from(".page1 .title h1",{
   delay:5
 },)
 
+if(window.innerWidth >768 ){
 gsap.from(".title2",{
   x:100,
   opacity:0,
   duration:0.5,
   delay:5
 })
+
+}
+
 
 // // // npx @tailwindcss/cli -i ./input.css -o ./output.css --watch
 

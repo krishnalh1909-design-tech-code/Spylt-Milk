@@ -1,5 +1,9 @@
 /*! tailwindcss v4.1.13 | MIT License | https://tailwindcss.com */
 @layer properties;
+@font-face {
+  font-family: 'Antonio';
+  src: url('./Fonts/Antonio.woff') format('woff2'),;
+}
 @layer theme, base, components, utilities;
 @layer theme {
   :root, :host {
@@ -180,23 +184,11 @@
   .top-0 {
     top: calc(var(--spacing) * 0);
   }
-  .top-\[2\%\] {
-    top: 2%;
-  }
   .top-\[15\%\] {
     top: 15%;
   }
-  .top-\[22\%\] {
-    top: 22%;
-  }
   .top-\[23\%\] {
     top: 23%;
-  }
-  .top-\[23\] {
-    top: 23;
-  }
-  .top-\[23vh\] {
-    top: 23vh;
   }
   .bottom-\[-5\%\] {
     bottom: -5%;
@@ -248,9 +240,6 @@
   }
   .w-\[0px\] {
     width: 0px;
-  }
-  .w-\[40vw\] {
-    width: 40vw;
   }
   .w-\[50\%\] {
     width: 50%;
@@ -350,32 +339,11 @@
     font-size: var(--text-2xl);
     line-height: var(--tw-leading, var(--text-2xl--line-height));
   }
-  .text-\[0px\] {
-    font-size: 0px;
-  }
-  .text-\[5px\] {
-    font-size: 5px;
-  }
-  .text-\[5vw\] {
-    font-size: 5vw;
-  }
-  .text-\[9vw\] {
-    font-size: 9vw;
-  }
   .text-\[10vw\] {
     font-size: 10vw;
   }
   .text-\[30px\] {
     font-size: 30px;
-  }
-  .text-\[40px\] {
-    font-size: 40px;
-  }
-  .text-\[50px\] {
-    font-size: 50px;
-  }
-  .text-\[55px\] {
-    font-size: 55px;
   }
   .font-bold {
     --tw-font-weight: var(--font-weight-bold);
@@ -394,43 +362,12 @@
   .text-\[\#FCE1CD\] {
     color: #FCE1CD;
   }
-  .text-\[5\] {
-    color: 5;
-  }
-  .text-\[vw\] {
-    color: vw;
-  }
   .mix-blend-difference {
     mix-blend-mode: difference;
-  }
-  .md\:top-\[3\%\] {
-    @media (width >= 48rem) {
-      top: 3%;
-    }
-  }
-  .md\:top-\[35\%\] {
-    @media (width >= 48rem) {
-      top: 35%;
-    }
-  }
-  .md\:top-\[35\.\%\] {
-    @media (width >= 48rem) {
-      top: 35.%;
-    }
-  }
-  .md\:top-\[35\.5\%\] {
-    @media (width >= 48rem) {
-      top: 35.5%;
-    }
   }
   .md\:top-\[36\%\] {
     @media (width >= 48rem) {
       top: 36%;
-    }
-  }
-  .md\:top-\[38\%\] {
-    @media (width >= 48rem) {
-      top: 38%;
     }
   }
   .md\:block {
