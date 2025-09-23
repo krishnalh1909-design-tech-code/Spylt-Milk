@@ -21,23 +21,41 @@ setTimeout(() => {
   document.querySelector(".bgVid video").play();
 }, 4000);
 
-gsap.from(".page1 .title h1",{
-  y:500,
-  duration:0.5,
-  stagger:0.02,
-  delay:5
-},)
+gsap.from(".page1 .title h1", {
+  y: 500,
+  duration: 0.5,
+  stagger: 0.02,
+  delay: 5,
+});
 
-if(window.innerWidth >768 ){
-gsap.from(".title2",{
-  x:100,
-  opacity:0,
-  duration:0.5,
-  delay:5
-})
+gsap.from(".title2", {
+  x: 100,
+  opacity: 0,
+  duration: 0.5,
+  delay: 5,
+});
 
+if (window.innerWidth < 768) {
+  gsap.from(".page1 .title h1", {
+    y: 500,
+    duration: 0.5,
+    stagger: 0.02,
+    delay: 4.5,
+  });
+
+  gsap.from(".title2", {
+    x: 100,
+    opacity: 0,
+    duration: 0.5,
+    delay: 4.5,
+  });
+
+  gsap.to(".sImg", {
+    delay: 4.5,
+    bottom: "0%",
+    duration: 1,
+  });
 }
-
 
 // // // npx @tailwindcss/cli -i ./input.css -o ./output.css --watch
 
@@ -65,4 +83,50 @@ function toggleVisibility() {
 
 window.addEventListener("load", toggleVisibility);
 window.addEventListener("resize", toggleVisibility);
+
+gsap.to(".bgVid,.bgImg", {
+  scale: 0.9,
+  rotate: 5,
+
+  scrollTrigger: {
+    trigger: ".page1",
+    start: "20%",
+    end: "80%",
+    // markers:true,
+    scrub: true,
+  },
+});
+
+let tl = gsap.timeline({
+  scrollTrigger: {
+    trigger: ".page2",
+    start: "-50%",
+    end: "50%",
+    // markers:true,
+    scrub: true,
+    // stagger:0.5
+  },
+});
+
+tl.to(".page2 span", {
+  color: "#FAEADE",
+  stagger: 1,
+});
+
+let tl2 = gsap.timeline({
+  scrollTrigger: {
+    trigger: ".page2",
+    start: "-30%",
+    end: "0%",
+    // markers:true,
+    scrub: true,
+    // stagger:0.5
+  },
+});
+
+tl2.from(".page2 div", {
+  width: "0vw",
+  opacity: 0,
+  duration: 1,
+});
 

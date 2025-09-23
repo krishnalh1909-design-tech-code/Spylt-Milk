@@ -7,10 +7,10 @@
   <link href="./output.css" rel="stylesheet">
 </head>
 
-<body>
-  <div class="main bg-[#F9E9DD]">
+<body class="overflow-x-hidden">
+  <div class="main bg-[#222123] overflow-hidden">
 
-    <!-- ------------------LOADER------------------------------ -->
+
     <div class="loader flex items-center justify-center flex-col w-full h-screen bg-[#523122] fixed z-100">
       <img class="md:w-xs w-[200px] pt-48" src="./Images/loader-img.svg" alt="logo" />
 
@@ -18,28 +18,25 @@
 
       <div class="show w-[0px] h-2.5 bg-[#F9E9DD] mt-7"></div>
     </div>
-    <!-- ------------------------------------------------------------- -->
 
-    <!-- -----------------HOME BACKGROUND Video/Image ------------------------------- -->
+
+
 
     <div class="bgVid h-screen w-full absolute overflow-hidden ">
       <video class="h-screen w-full object-cover hidden md:block" muted src="./Videos/main-video.mp4"></video>
     </div>
 
     <div
-      class="bgImg bg-[url('/Images/bgImg.png')] bg-cover bg-center h-screen w-full absolute overflow-hidden block md:hidden">
+      class="bgImg bg-[url('/Images/bgImg.png')] bg-[#F9E9DD] bg-cover bg-center h-screen w-full absolute overflow-hidden block md:hidden">
 
-      <div class="h-[40vh] w-full scale-140 absolute bottom-[-5%]">
+      <div class="sImg h-[40vh] w-full scale-140 absolute bottom-[-100%]">
         <img class="h-full w-full object-contain" src="./Images/bgImg2.png"></img>
       </div>
 
     </div>
 
-    <!-- ---------------------------------------------------------------------- -->
 
-    <!-- -----------------------Page-1------------------------------------------------ -->
-
-    <div class="page1 w-full h-screen relative overflow-hidden flex flex-col items-center justify-center">
+    <div class="page1 w-full h-screen relative flex flex-col items-center justify-center overflow-x-hidden">
 
       <div class="navbar p-5 w-[50%] flex items-center justify-between bg-transparent fixed top-0 left-0 z-99">
         <img src="./Images/logo.svg" alt="" />
@@ -50,7 +47,7 @@
       <div class="h-[100vh] w-full flex flex-col items-center justify-center absolute">
 
         <div
-          class="title text-[10vw] md:text-[7.5vw] font-[Antonio] text-[#523122] font-extrabold flex w-max overflow-hidden absolute top-[15%]">
+          class="title text-[10vw] md:text-[7.5vw] font-[Antonio] text-[#523122] font-extrabold flex w-max overflow-hidden absolute top-[12%]">
           <h1>F</h1>
           <h1>R</h1>
           <h1>E</h1>
@@ -73,7 +70,7 @@
         </div>
 
         <div
-          class="title2 w-max md:w-[53vw] text-center absolute top-[23%] md:top-[36%] z-90 h-max bg-[#FAEADE] rotate-[-3deg] overflow-hidden">
+          class="title2 w-max md:w-[53vw] text-center absolute top-[23%] md:top-[36%] z-90 bg-[#FAEADE] rotate-[-3deg] overflow-hidden">
           <h1
             class="bg-[#A26833] text-[10vw] md:text-[7vw] font-[Antonio] text-[#FCE1CD] font-bold  text-center border-[5px] md:border-[10px] px-[5px]">
             PROTEIN + CAFFEINE
@@ -82,16 +79,32 @@
 
       </div>
 
-
-
-      <!-- ---------------------------------------------------------------------------------------- -->
-
-
-
-
-
     </div>
 
+
+    <div
+      class="page2 w-full h-[120vh] flex flex-col items-center justify-center relative overflow-x-hidden bg-[#7F3B2D] font-bold">
+      <h1 class="font-[Antonio2] text-[11vw] md:text-[8vw] tracking-tighter text-[#8C4F42] leading-[9vh]">
+        <span>STIR</span> <span>UP</span> <span>YOUR</span>
+      </h1>
+      <h1 class="font-[Antonio2] text-[11vw] md:text-[8vw] mb-[2vh] md:mb-[7vh] text-[#8C4F42] tracking-tighter">
+        <span>FEARLESS</span> <span>PAST</span> <span>AND</span>
+      </h1>
+      <h1
+        class="font-[Antonio2] text-[11vw] md:text-[8vw] mt-[2vh] md:mt-[7vh] text-[#8C4F42] leading-[9vh] tracking-tighter">
+        <span>YOUR</span> <span>FUTURE</span> <span>WITH</span>
+        <span>EVERY</span>
+      </h1>
+      <h1 class="font-[Antonio2] text-[11vw] md:text-[8vw] text-[#8C4F42] tracking-tighter">
+        <span>GULF</span> <span>OF</span> <span>PERFECT</span>
+        <span>JOURNEY</span>
+      </h1>
+
+      <div
+        class="absolute w-[65vw] md:w-[25vw] font-[Antonio] text-[40px] md:text-max md:text-[7vw] text-[#7F3B2D] bg-[#E3A458] border-[#7F3B2D] border-[2px] md:border-[10px] px-[2vw] py-[0vw] pb-2.5 rotate-[3deg] top-[45%] md:top-[32%]">
+        <h1 class="w-full md:w-[20vw] text-center">FUEL UP</h1>
+      </div>
+    </div>
 
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>

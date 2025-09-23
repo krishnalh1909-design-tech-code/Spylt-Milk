@@ -2,3 +2,8 @@
   font-family: 'Antonio';
   src: url('./Fonts/Antonio.woff') format('woff2'),
 }
+
+@font-face {
+  font-family: 'Antonio2';
+  src: url('./Fonts/Antonio2.woff2') format('woff2'),
+}
