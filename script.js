@@ -55,7 +55,17 @@ if (window.innerWidth < 768) {
     bottom: "0%",
     duration: 1,
   });
+
 }
+
+ gsap.from(".page1 p, .page1 button", {
+    opacity: 0,
+    y: 100,
+    delay: 5,
+    duration: 0.5,
+  });
+
+
 
 // // // npx @tailwindcss/cli -i ./input.css -o ./output.css --watch
 
@@ -73,7 +83,6 @@ function toggleVisibility() {
     bgVid.style.display = "block";
   }
 
-  // Reload only when switching from mobile to desktop
   if (wasMobile && !isMobile) {
     location.reload();
   }
@@ -97,14 +106,13 @@ gsap.to(".bgVid,.bgImg", {
   },
 });
 
+
 let tl = gsap.timeline({
   scrollTrigger: {
     trigger: ".page2",
     start: "-50%",
     end: "50%",
-    // markers:true,
     scrub: true,
-    // stagger:0.5
   },
 });
 
@@ -118,15 +126,26 @@ let tl2 = gsap.timeline({
     trigger: ".page2",
     start: "-30%",
     end: "0%",
-    // markers:true,
+
     scrub: true,
-    // stagger:0.5
   },
 });
 
-tl2.from(".page2 div", {
-  width: "0vw",
-  opacity: 0,
-  duration: 1,
-});
+tl2.from(
+  ".page2 div",
+  {
+    width: "0vw",
+    opacity: 0,
+    duration: 1,
+  },
+  "a"
+);
 
+tl2.from(
+  ".page2 div h1",
+  {
+    opacity: 0,
+    duration: 1,
+  },
+  "a"
+);
